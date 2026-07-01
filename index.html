@@ -40,6 +40,9 @@
     .note{margin-top:16px; font-size:13px; color:var(--muted)}
     /* sections */
     section{padding:56px 0}
+    /* section is an element selector; .wrap (class) would otherwise win and zero the vertical
+       padding, so this keeps the horizontal .wrap padding while restoring vertical rhythm. */
+    section.wrap{padding-top:48px; padding-bottom:48px}
     h2{font-size:clamp(24px,3.4vw,34px); letter-spacing:-.02em; margin:0 0 8px; font-weight:800}
     .sub{color:var(--muted); margin:0 0 36px; font-size:17px}
     .center{text-align:center}
